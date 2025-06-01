@@ -7,6 +7,7 @@ def process_value(value: Annotated[int, "範囲：0 <= value <= 100"]) -> None:
     if 0 <= value <= 100:
         print(f"受け取った値は範囲内です:{value}")
     else:
+        # raiseでエラーを発生させる
         raise ValueError(f"範囲外の値です。値:{value}")
 
 

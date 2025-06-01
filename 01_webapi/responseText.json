@@ -1,0 +1,18 @@
+{
+    "message": None, 
+    "results": 
+    [
+        {
+            "address1": "京都府", 
+            "address2": "京都市上京区", 
+            "address3": "後藤町", 
+            "kana1": "ｷｮｳﾄﾌ", 
+            "kana2": "ｷｮｳﾄｼｶﾐｷﾞｮｳｸ", 
+            "kana3": "ｺﾞﾄｳﾁｮｳ", 
+            "prefcode": "26", 
+            "zipcode": "6020821"
+        }
+    ], 
+    "status": 200
+}
+
