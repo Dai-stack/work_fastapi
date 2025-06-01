@@ -11,3 +11,10 @@ app = FastAPI()
 @app.get("/")
 async def get_hello():
     return {"message": "Hello World"}
+
+
+# #起動コマンド
+# ・uvicorn main:app --reload
+# #Swagger UI
+# #API動作テストのためのインターフェース
+# ・http://127.0.0.1:8000/docs
