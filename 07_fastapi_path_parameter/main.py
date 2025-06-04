@@ -17,5 +17,6 @@ async def read_user(user_id: int) -> dict:
     return {"user_id": user_id, "username": user.name}
 
 
+# uvicorn main:app --reload
 # http://127.0.0.1:8000/docs
 # 引数に型ヒントを用いていることにより，バリデーションが実装される

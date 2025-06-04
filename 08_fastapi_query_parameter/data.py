@@ -1,7 +1,7 @@
 from typing import Optional
 
 
-class Books:
+class Book:
     def __init__(self, id: str, title: str, category: str):
         self.id = id
         self.title = title
@@ -9,16 +9,16 @@ class Books:
 
 
 books = [
-    Books(id="1", title="愛するということ", category="心理学"),
-    Books(id="2", title="読書について", category="哲学"),
-    Books(id="3", title="Python入門", category="プログラミング"),
-    Books(id="4", title="データサイエンスの基礎", category="プログラミング"),
-    Books(id="5", title="幸福の条件", category="心理学"),
-    Books(id="6", title="源氏物語", category="文学"),
-    Books(id="7", title="コンピュータサイエンス入門", category="プログラミング"),
-    Books(id="8", title="日本の歴史", category="歴史"),
-    Books(id="9", title="現代アートの理解", category="芸術"),
-    Books(id="10", title="経済学の基礎", category="経済学"),
+    Book(id="1", title="愛するということ", category="心理学"),
+    Book(id="2", title="読書について", category="哲学"),
+    Book(id="3", title="Python入門", category="プログラミング"),
+    Book(id="4", title="データサイエンスの基礎", category="プログラミング"),
+    Book(id="5", title="幸福の条件", category="心理学"),
+    Book(id="6", title="源氏物語", category="文学"),
+    Book(id="7", title="コンピュータサイエンス入門", category="プログラミング"),
+    Book(id="8", title="日本の歴史", category="歴史"),
+    Book(id="9", title="現代アートの理解", category="芸術"),
+    Book(id="10", title="経済学の基礎", category="経済学"),
 ]
 
 
