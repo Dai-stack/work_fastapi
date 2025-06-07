@@ -1,1 +1,3 @@
 webapi/responseText.json
+__pycache__/
+*.pyc
