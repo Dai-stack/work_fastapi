@@ -28,3 +28,6 @@ conda activate fastapi_env
 ・安全性：リソースの状態を変えない 
 ・冪等性：何度実行しても結果が同じ
 ・GETメソッドは両方満たす，POSTメソッドは両方とも満たさない。
+
+#AnnotetdとField型
+・Annotetedは便利な機能だがPydanticのFieldで代替できる。
