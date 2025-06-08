@@ -31,3 +31,6 @@ conda activate fastapi_env
 
 #AnnotetdとField型
 ・Annotetedは便利な機能だがPydanticのFieldで代替できる。
+
+#非同期通信
+・FastAPIのasyncとPythonのasyncは同じもの（FastAPIはPythonの非同期通信を利用している）
