@@ -7,4 +7,4 @@ app = FastAPI()
 
 # ルーターをFstAPIアプリケーションに組み込む
 app.include_router(category_router)
-app.include_routeri(item_router)
+app.include_router(item_router)
