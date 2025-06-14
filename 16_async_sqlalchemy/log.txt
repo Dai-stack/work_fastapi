@@ -1,0 +1,46 @@
+The ``declarative_base()`` function is now available as sqlalchemy.orm.declarative_base(). (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  Base = declarative_base()
+データベースの初期化を開始します。
+2025-06-14 13:33:35,048 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-06-14 13:33:35,049 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("users")
+2025-06-14 13:33:35,049 INFO sqlalchemy.engine.Engine [raw sql] ()
+2025-06-14 13:33:35,051 INFO sqlalchemy.engine.Engine PRAGMA temp.table_info("users")
+2025-06-14 13:33:35,051 INFO sqlalchemy.engine.Engine [raw sql] ()
+既存のテーブルを削除しました。
+2025-06-14 13:33:35,052 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("users")
+2025-06-14 13:33:35,052 INFO sqlalchemy.engine.Engine [raw sql] ()
+2025-06-14 13:33:35,052 INFO sqlalchemy.engine.Engine PRAGMA temp.table_info("users")
+2025-06-14 13:33:35,053 INFO sqlalchemy.engine.Engine [raw sql] ()
+2025-06-14 13:33:35,053 INFO sqlalchemy.engine.Engine
+CREATE TABLE users (
+        id INTEGER NOT NULL,
+        name VARCHAR,
+        PRIMARY KEY (id)
+)
+
+
+2025-06-14 13:33:35,053 INFO sqlalchemy.engine.Engine [no key 0.00010s] ()   
+新しいテーブルを作成しました。
+2025-06-14 13:33:35,065 INFO sqlalchemy.engine.Engine COMMIT
+中邑 をデータベースに追加します。
+中邑 をデータベースに追加しました。
+2025-06-14 13:33:35,067 INFO sqlalchemy.engine.Engine BEGIN (implicit)       
+2025-06-14 13:33:35,067 INFO sqlalchemy.engine.Engine INSERT INTO users (name) VALUES (?)
+2025-06-14 13:33:35,067 INFO sqlalchemy.engine.Engine [generated in 0.00013s] ('中邑',)
+2025-06-14 13:33:35,068 INFO sqlalchemy.engine.Engine COMMIT
+岡田 をデータベースに追加します。
+岡田 をデータベースに追加しました。
+2025-06-14 13:33:35,075 INFO sqlalchemy.engine.Engine BEGIN (implicit)       
+2025-06-14 13:33:35,075 INFO sqlalchemy.engine.Engine INSERT INTO users (name) VALUES (?)
+2025-06-14 13:33:35,076 INFO sqlalchemy.engine.Engine [cached since 0.008938s ago] ('岡田',)
+2025-06-14 13:33:35,077 INFO sqlalchemy.engine.Engine COMMIT
+データベースからユーザーを取得します。
+2025-06-14 13:33:35,083 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-06-14 13:33:35,084 INFO sqlalchemy.engine.Engine SELECT users.id, users.name
+FROM users
+2025-06-14 13:33:35,084 INFO sqlalchemy.engine.Engine [generated in 0.00012s] ()
+ユーザーの取得が完了しました。
+2025-06-14 13:33:35,085 INFO sqlalchemy.engine.Engine ROLLBACK
+1: 中邑
+2: 岡田
+
